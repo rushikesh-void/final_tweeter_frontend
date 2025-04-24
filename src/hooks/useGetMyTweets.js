@@ -18,7 +18,7 @@ const useGetMyTweets = (id) =>{
             });
             dispatch(getAllTweets(res.data.tweets))
         } catch (error){
-            console.error("error fetching tweets:", error);
+            console.log("error fetching tweets:", error);
         }
     }, [dispatch, id]);
 
@@ -30,7 +30,7 @@ const useGetMyTweets = (id) =>{
         });
         dispatch(getAllTweets(res.data.tweets))
     } catch (error){
-        console.error("error fetching following tweets:", error);
+        console.log("error fetching following tweets:", error);
     }
 }, [dispatch, id]);
 
