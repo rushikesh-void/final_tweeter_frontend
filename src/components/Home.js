@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import LeftSiderbar from './LeftSidebar'
-// import Feed from './Feed'
 import RightSidebar from './RightSidebar'
 import { Outlet, useNavigate } from 'react-router-dom'
 import { useSelector } from 'react-redux'

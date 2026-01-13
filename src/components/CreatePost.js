@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-// import Avatar from "react-avatar";
 import { CiImageOn } from "react-icons/ci";
 import axios from "axios";
 import { TWEET_API_END_POINT } from "../utils/constant";

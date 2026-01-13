@@ -21,7 +21,7 @@ const userSlice = createSlice({
     },
 
     followingUpdate: (state, action) => {
-      // ✅ SAFETY CHECK (prevents crash after logout)
+      // SAFETY CHECK (prevents crash after logout)
       if (!state.user || !state.user.following) return;
 
       if (state.user.following.includes(action.payload)) {
